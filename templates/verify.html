@@ -1,0 +1,14 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}">
+ <title>Cake Order Verification</title> 
+</head> 
+<body> 
+<form action = "/validate" method="post"> 
+<h2> One time password has been sent to the email id. Please check the email for the verification.</h2> 
+Enter OTP: <input  type="text" name="otp"> 
+<input type="submit" id="submit" value="Submit"> 
+</form> 
+</body>
+</html>

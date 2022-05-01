@@ -1,0 +1,31 @@
+<html> 
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}">
+<title>success</title> 
+</head> 
+<body> 
+    <h2 >The ordered data is: </h2>
+<table>
+<tr>
+    <td>
+<div>
+<table style="" border="border">
+{% for i in a: %} 
+ <tr ><td style="font-weight:bold;font-size:20px;">{{i}} </td> <td style="font-size:20px;color:blue;">{{a[i]}} </td></tr>
+{% endfor %}
+</table>
+</div>
+</td>
+<td style="padding-left:10%;">
+<form style="font-size:20px;" action = "http://localhost:5000/verify" method ="POST">
+    <p>Please Enter email to confirm the Cake Order</p> 
+    Email: <input type="email" name="email"> 
+    
+    <input type = "submit" id="submit" value="Submit"> 
+   
+    </form> 
+</td>
+</tr>
+</table>
+</body>
+</html>

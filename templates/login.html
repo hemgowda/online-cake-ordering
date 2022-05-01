@@ -1,0 +1,18 @@
+<html> 
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}">
+    </head>
+ <body> 
+
+    <form action = "http://localhost:5000/login" method = "post"> 
+    <table class="login" align="center"> 
+    <tr><td>Name</td> 
+        <td><input type ="text" name ="uname"></td></tr> 
+    <tr><td>Password</td> 
+        <td><input type ="password" name ="pass"></td>
+    </tr> 
+    <tr><td><input  id="submit" type = "submit"></td></tr> 
+    </table> 
+    </form> 
+ </body> 
+</html> 

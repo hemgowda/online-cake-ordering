@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.login{
+    padding: 20px;
+    font-size: 30px;
+}
+.login input{
+    font-size:20px;
+    height:30px;
+}
+.login td{
+    padding:10px;
+}
+.login #submit{
+    font-weight:bold;
+    width:120px;
+    border-radius:10px;
+    background-color: green;
+    cursor: pointer;
+
+}
+.login #submit:hover{
+    background-color: bisque;
+
+}
+.nav{
+    padding: 15px;
+    background-color: rgb(238, 238, 165);
+    font-weight:bold;
+   
+}
+.nav #logout{
+    float:right;
+    text-decoration: none;
+   
+}
+#input{
+    font-size:20px;
+    height:30px;
+}

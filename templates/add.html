@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}">
+    </head>
+ <body>
+     {% include('nav.html') %}
+ <form action=http://localhost:5000/add method=POST>
+ <table class="login" align="center">
+    <tr>
+        <td>Cake Occasion</td>
+       <td><select name=cake_occasion id="input">
+           <option value="Birthday">Birthday</option>
+           <option value="Anniversary">Anniversary</option>
+           <option value="Wedding">Wedding</option>
+           <option value="Kids birthday">Kids Birthday</option>
+           <option value="Lover birthday">Lover Birthday</option>
+           
+       </select>
+       </td>
+        </tr>
+ <tr>
+ <td>Cake Flavour</td>
+<td><select name=cake_name id="input">
+    <option value="Truffle">Truffle</option>
+    <option value="Chocolate">Chocolate</option>
+    <option value="Black_Forest">Black Forest</option>
+    <option value="Butterscotch">Butterscotch</option>
+    <option value="Pineapple">Pineapple</option>
+    <option value="Vanilla">Vanilla</option>
+    <option value="Red_Velvet">Red Velvet</option>
+  </select>
+</td>
+ </tr> 
+<tr>
+ <td>Cake Type</td>
+<td><select name=cake_type id="input">
+    <option value="cream">cream</option>
+    <option value="egg_less">Egg less</option>
+    <option value="Dry Cake">Dry cake</option>
+    <option value="fusion cake">fusion cake</option>
+    <option value="Gems cake">Gems cake</option>
+    <option value="Photo cake">Photo cake</option>
+</select>
+</td>
+ </tr>
+<tr>
+ <td>Text on Cake</td>
+<td><input type=text name=cake_text></td>
+ </tr>
+
+    <tr>
+        <td>Cake Shape</td>
+       <td><select name=cake_shape id="input">
+           <option value="round">round</option>
+           <option value="Heart">Heart</option>
+           <option value="sqaure">sqaure</option>
+           <option value="rectangle">rectangle</option>
+         </select>
+       </td>
+        </tr>
+        <tr>
+            <td>cake Weight</td>
+           <td><input type=text name=cake_weight></td>
+            </tr>
+<tr>
+ <td><input id="submit" type=submit value=Add></td>
+ </tr>
+ </table>
+ </form>
+ </body>
+</html>
